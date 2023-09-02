@@ -1,0 +1,35 @@
+how to create a component:
+
+1st way:
+1. create a folder
+2. we need to create 4 files inside it
+    a. login.component.ts
+    b. login.component.html
+    c. login.component.css
+    d. login.component.spec.ts
+3. register login component inside app.module.ts
+4. use selector of the component and use it inside the files where we want it   
+
+2nd way:
+you need to go to cli and enter one single line command 
+    ng generate component login
+    or
+    ng g c login
+
+3.steps for passing value from parent component to child component    
+
+1. create variable in parent component
+2. pass this variable to child
+3. goto template of parent and pass the value through property binding
+4. create Input variable in child
+5. display in template of child component
+6. add the selector of parent into app.component.html
+
+4. steps for passing value from child to parent component
+a. in child component create a event(button click), this event 
+will get value displayed from parent
+b. it has to emit it to parent i.e inform parent to show the value
+c. by creating a output variable we will be able to emit it i.e pass instruction to parent to show that value
+d. parent will receive it from selector of child component present in parent template
+e. it will call showmonth() and will display the value
+

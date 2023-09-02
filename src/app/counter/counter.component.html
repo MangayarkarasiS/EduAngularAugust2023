@@ -1,0 +1,32 @@
+<p>two way binding</p>
+<button type="button" (click)="increment()" class="btn btn-success">+</button>
+<input type="number" [(ngModel)]="counter" />
+<button type="button" (click)="decrement()" class="btn btn-danger">--</button>
+//handson
+<button type="button" (click)="rose()" class="btn btn-success">rose</button>
+
+<img [src]="imgpath" height="50px" weight="50px"/>
+<button type="button" (click)="pushup()" class="btn btn-success">Pushup</button>
+
+<div>
+    <ul>
+        <li *ngFor="let mon of weekdays ; let i=index;">{{mon}} <button type="button" (click)="removeWeek(mon)" class="btn btn-warning">Remove</button></li>
+    </ul>
+</div>
+<p>If condition</p>
+<div *ngIf="counter==5;else turn">{{counter}}</div>
+
+<ng-template #turn>
+    {{counter*5}}
+</ng-template>
+
+<p>handson ngif</p>
+<div *ngIf="show;else falsecond">
+    <button type="button" (click)="showm()" [disabled]="!show">Enable</button>
+    <h3>Enabled</h3>
+</div>
+
+<ng-template #falsecond>
+    <button type="button" (click)="showm()" [disabled]="!show">Disable</button>
+    <h3>Disabled</h3>
+</ng-template>

@@ -1,0 +1,8 @@
+<div>
+    <ul>
+        <li *ngFor="let color of allColors" >
+            {{color}} <button type="button" class="btn btn-warning" (click)="removecolor(color)">Remove Color</button>
+        </li>
+    </ul>
+</div>
+<app-color-child [printmonth]="month" (showEventEmitter)="showmonth(month)"></app-color-child>
