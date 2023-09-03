@@ -11,6 +11,8 @@ import { CounterComponent } from './counter/counter.component';
 import { FormsModule } from '@angular/forms';
 import { ColorComponent } from './color/color.component';
 import { ColorChildComponent } from './color/color-child/color-child.component';
+import { StudListComponent } from './stud/stud-list/stud-list.component';
+import { HoverMouseDirective } from './hover-mouse.directive';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { ColorChildComponent } from './color/color-child/color-child.component';
     CounterComponent,
     ColorComponent,
     ColorChildComponent,
+    StudListComponent,
+    HoverMouseDirective,
     
   ],
   imports: [

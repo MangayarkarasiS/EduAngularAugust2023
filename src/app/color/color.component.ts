@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-color',
@@ -11,9 +11,18 @@ export class ColorComponent implements OnInit {
   
   month:string="Jan"
 
-  constructor() { }
+  constructor() {
+    console.log("Parent constructor method")
+   }
+
+   ngOnchanges(changes:SimpleChanges)
+   {
+     console.log("Changes happened in parent")
+   }
+  
 
   ngOnInit(): void {
+   console.log("Parent initialized")
   }
  showmonth(month:string)
   {

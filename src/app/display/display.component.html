@@ -1,15 +1,15 @@
 <p>String interpolation code</p>
-<h1> {{flowerName}} displayed through string interpolation</h1>
+<h1> {{flowerName}} </h1>
 
 <p>Property Binding</p>
-<input type="text" [value]="flowerName" />
+<input appHoverMouse type="text" [value]="flowerName" />
 
 <p>Event Binding code</p>
 <button class="btn btn-primary" (click)="changeName()" type="button">changeFlower</button>
 
 <p>Two way Data Binding</p>
 <button type="button" class="btn btn-success" (click)="increment()">+</button>
-<input type="number" [(ngModel)]="counter" />
+<input appHoverMouse type="number" [(ngModel)]="counter" />
 <button type="button" class="btn btn-danger" (click)="decrement()">-</button>
 
 <button type="button" (click)="glow()">On</button>
