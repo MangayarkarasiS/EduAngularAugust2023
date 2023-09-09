@@ -13,7 +13,11 @@ import { ColorComponent } from './color/color.component';
 import { ColorChildComponent } from './color/color-child/color-child.component';
 import { StudListComponent } from './stud/stud-list/stud-list.component';
 import { HoverMouseDirective } from './hover-mouse.directive';
-
+import { NumberListComponent } from './number-list/number-list.component';
+import { ExpoPipe } from './custom-pipe/expo.pipe';
+import { FilterDataPipe } from './custom-pipe/filter-data.pipe';
+import { TodoAnimationsComponent } from './todo-animations/todo-animations.component';
+import  {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,12 +30,17 @@ import { HoverMouseDirective } from './hover-mouse.directive';
     ColorChildComponent,
     StudListComponent,
     HoverMouseDirective,
+    NumberListComponent,
+    ExpoPipe,
+    FilterDataPipe,
+    TodoAnimationsComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],

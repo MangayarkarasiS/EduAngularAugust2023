@@ -7,7 +7,9 @@ import { Stud } from '../stud.model';
   styleUrls: ['./stud-list.component.css']
 })
 export class StudListComponent implements OnInit {
- 
+
+  filterValue:string='';
+  allNumbers:number[]=[3,2,1,4]; 
   allStud:Stud[]=[
   {
     studId:101,
@@ -42,6 +44,17 @@ export class StudListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  AddTestStud(){
+    let newStud={
+      studId:105,
+      studName:'Test stud',
+      studTotalMarks:245,
+      studDob:new Date(2,2,2010),
+      studGender:'Male'
+    }
+    this.allStud.push(newStud);
   }
  getMark(mark:number){
   if(mark>=400)

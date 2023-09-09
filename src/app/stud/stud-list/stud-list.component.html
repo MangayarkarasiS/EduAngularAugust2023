@@ -1,5 +1,22 @@
+<!--<div class="container">
+    <h2>Number List</h2>
+    <ul>
+        <li *ngFor="let num of allNumbers">
+            {{num}}
+        </li>
+    </ul>
+</div>-->
+
 <div class="container">
     <h2 [ngStyle]="{'font-size-px':30}"> student details</h2>
+    <div class="form-group m-3">
+        <input 
+             type="text" 
+             class="form-control" 
+             [(ngModel)]="filterValue"
+             placeholder="Enter Gender" 
+             >
+    </div>
     <table class="table table-striped">
         <thead class="table-dark text-white">
             <tr>
@@ -13,13 +30,15 @@
         </thead>
         <tbody>
           <!--  <tr *ngFor="let stud of allStud" [ngSwitch]="stud.studGender" >-->
-              <tr appHoverMouse *ngFor="let stud of allStud" [ngClass]="{'table-danger':stud.studTotalMarks<250}" >
+            <!--   <tr appHoverMouse *ngFor="let stud of allStud" [ngClass]="{'table-danger':stud.studTotalMarks<250}" >-->
                <!-- <ng-container *ngIf="stud.studTotalMarks<250">-->
+                <!--<td [ngStyle]="{'color':getMark(stud.studTotalMarks)}">-->
+                <tr *ngFor="let stud of allStud | filterData:filterValue" >
                 <td>{{stud.studId}}</td>
-                <td>{{stud.studName}}</td>
-                <td [ngStyle]="{'color':getMark(stud.studTotalMarks)}">{{stud.studTotalMarks}}</td>
-                <td></td>
-                <td>{{stud.studDob | date}}</td>    
+                <td>{{stud.studName | titlecase }}</td>
+                <td>{{stud.studTotalMarks | currency :'INR': 'symbol'}}</td>
+                <td>{{stud.studTotalMarks/500 |percent}}</td>
+                <td>{{stud.studDob | date :'fullDate' | uppercase}}</td>    
                 <td>{{stud.studGender}}</td>
                <!-- <td *ngSwitchCase="'Male'" class="text-primary">{{stud.studGender}}</td>
                 <td *ngSwitchCase="'Female'" class="text-danger">{{stud.studGender}}</td>-->
@@ -27,4 +46,5 @@
             </tr>
         </tbody>
     </table>
+    <button class="btn btn-success" type="button" (click)="AddTestStud()">Add TestStudent</button>
 </div>
