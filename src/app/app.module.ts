@@ -18,6 +18,9 @@ import { ExpoPipe } from './custom-pipe/expo.pipe';
 import { FilterDataPipe } from './custom-pipe/filter-data.pipe';
 import { TodoAnimationsComponent } from './todo-animations/todo-animations.component';
 import  {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import { HttpClientModule } from '@angular/common/http';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { StudentMarksComponent } from './student-marks/student-marks.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,13 +37,16 @@ import  {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     ExpoPipe,
     FilterDataPipe,
     TodoAnimationsComponent,
+    StudentDetailsComponent,
+    StudentMarksComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
 
   ],
   providers: [],

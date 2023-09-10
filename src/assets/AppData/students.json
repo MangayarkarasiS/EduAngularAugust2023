@@ -1,0 +1,14 @@
+[
+    {
+      "studId":101,
+      "studName":"Vaishnavi",
+      "studTotalMarks":475,
+      "studGender":"Female"
+    },
+    {
+        "studId":102,
+        "studName":"Prabhakar",
+        "studTotalMarks":425,
+        "studGender":"Male"
+      }
+   ]
