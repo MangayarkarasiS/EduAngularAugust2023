@@ -33,3 +33,15 @@ c. by creating a output variable we will be able to emit it i.e pass instruction
 d. parent will receive it from selector of child component present in parent template
 e. it will call showmonth() and will display the value
 
+routing :
+
+1. create a header component and add navbar to it
+2. goto app.routingmodule.ts and configure paths
+3. add it to app.component.html along with router outlet
+
+services:
+
+1. create a angular service and add methods to it so that it will receive observable object as response
+2. in app module .ts add httpclientmodule
+3. create component
+4. subscribe to receive endpoints

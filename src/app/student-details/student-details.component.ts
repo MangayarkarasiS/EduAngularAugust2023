@@ -24,7 +24,11 @@ export class StudentDetailsComponent implements OnInit {
   ngOnInit(): void {
     //code for bringing data from angular service without http
     //this.studservice.getAllStudents();
-    this.studservice.getAllStudents().subscribe((data)=>this.allStudents=data);
+    this.studservice.getAllStudents().subscribe({
+      next:(response)=>(this.allStudents=response),
+      error:(err)=>{console.log(err)}
+    })
+   
   }
 
 }

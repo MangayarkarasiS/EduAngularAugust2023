@@ -1,0 +1,33 @@
+
+
+<div class="container">
+    <h2 [ngStyle]="{'font-size-px':30}"> Student details from Server</h2>
+    
+    <table class="table table-striped">
+        <thead class="table-dark text-white">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>TotalMarks</th>
+                <th>Dob</th>
+                <th>Gender</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr *ngFor="let stud of allStud" >
+                <td>{{stud.studId}}</td>
+                <td>{{stud.studName  }}</td>
+                <td>{{stud.studTotalMarks }}</td>
+                <td>{{stud.studDob}} </td>    
+                <td>{{stud.studGender}}</td>
+              <td><button type="button" class="btn btn-danger" 
+                (click)="deleteStudent(stud.studId)">Remove</button></td>
+                <td><button type="button" class="btn btn-warning" 
+                    (click)="viewStudent(stud.studId)">View</button></td>
+            </tr>
+        </tbody>
+    </table>
+   
+</div>
+

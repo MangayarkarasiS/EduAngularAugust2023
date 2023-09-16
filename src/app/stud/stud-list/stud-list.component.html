@@ -33,7 +33,7 @@
             <!--   <tr appHoverMouse *ngFor="let stud of allStud" [ngClass]="{'table-danger':stud.studTotalMarks<250}" >-->
                <!-- <ng-container *ngIf="stud.studTotalMarks<250">-->
                 <!--<td [ngStyle]="{'color':getMark(stud.studTotalMarks)}">-->
-                <tr *ngFor="let stud of allStud | filterData:filterValue" >
+                <tr appHoverMouse *ngFor="let stud of allStud | filterData:filterValue" >
                 <td>{{stud.studId}}</td>
                 <td>{{stud.studName | titlecase }}</td>
                 <td>{{stud.studTotalMarks | currency :'INR': 'symbol'}}</td>

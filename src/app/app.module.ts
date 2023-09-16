@@ -21,6 +21,7 @@ import  {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { HttpClientModule } from '@angular/common/http';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { StudentMarksComponent } from './student-marks/student-marks.component';
+import { StudentListHttpComponent } from './studentcomp/student-list-http/student-list-http.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,8 @@ import { StudentMarksComponent } from './student-marks/student-marks.component';
     FilterDataPipe,
     TodoAnimationsComponent,
     StudentDetailsComponent,
-    StudentMarksComponent
+    StudentMarksComponent,
+    StudentListHttpComponent
     
   ],
   imports: [

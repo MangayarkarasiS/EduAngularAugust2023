@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "studId": 101,
+      "studName": "Vaishnavi",
+      "studTotalMarks": 475,
+      "studDob": "07/07/07",
+      "studGender": "Female"
+    },
+    {
+      "studId": 102,
+      "studName": "Sravani patanage",
+      "studTotalMarks": 375,
+      "studDob": "25/5/02",
+      "studGender": "Female"
+    },
+    {
+      "studId": 103,
+      "studName": "Vishnu prasad",
+      "studTotalMarks": 300,
+      "studDob": "27/7/02",
+      "studGender": "Male"
+    }
+  ]
+}
