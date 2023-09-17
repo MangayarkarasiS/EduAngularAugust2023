@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Stud } from '../stud/stud.model';
+import { Studt } from '../studn';
 
 @Injectable({
   providedIn: 'root'
@@ -12,13 +13,17 @@ export class StudentHttpService {
 
   constructor(private httpClient:HttpClient) { }
  
-  getAllStudents():Observable<Stud[]>{
-    return this.httpClient.get<Stud[]>(this.baseUrl);
+  getAllStudents():Observable<Studt[]>{
+    return this.httpClient.get<Studt[]>(this.baseUrl);
+  }
+
+  addStudents(student:Studt):Observable<Studt>{
+    return this.httpClient.post<Studt>(this.baseUrl,student);
   }
 
 
-  getAStudent(studId:number):Observable<Stud>{
-    return this.httpClient.get<Stud>(this.baseUrl+'/'+studId);
+  getAStudent(studId:any):Observable<Studt>{
+    return this.httpClient.get<Studt>(this.baseUrl+'/'+studId);
   }
 
    deleteStudent(studId:number):Observable<void>{

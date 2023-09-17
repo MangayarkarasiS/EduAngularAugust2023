@@ -45,3 +45,21 @@ services:
 2. in app module .ts add httpclientmodule
 3. create component
 4. subscribe to receive endpoints
+
+Forms:
+
+1. Template driven form
+2. Reactive form
+
+1. Template driven form
+  - will create Add student form using template driven form
+  - here it will be creating form control objects for our input elements
+  - for this we need to use ngModel directive in our template
+  - create simple forms using this template
+
+2. Reactive form
+   - will create a Edit student form using reactive form  
+
+
+
+

@@ -22,6 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { StudentMarksComponent } from './student-marks/student-marks.component';
 import { StudentListHttpComponent } from './studentcomp/student-list-http/student-list-http.component';
+import { StudentViewHttpComponent } from './studentcomp/student-view-http/student-view-http.component';
+import { StudentAddHttpComponent } from './studentcomp/student-add-http/student-add-http.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,9 @@ import { StudentListHttpComponent } from './studentcomp/student-list-http/studen
     TodoAnimationsComponent,
     StudentDetailsComponent,
     StudentMarksComponent,
-    StudentListHttpComponent
+    StudentListHttpComponent,
+    StudentViewHttpComponent,
+    StudentAddHttpComponent
     
   ],
   imports: [

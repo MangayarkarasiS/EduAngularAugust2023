@@ -1,24 +1,36 @@
 {
   "students": [
     {
-      "studId": 101,
-      "studName": "Vaishnavi",
-      "studTotalMarks": 475,
-      "studDob": "07/07/07",
+      "id": 1,
+      "studName": "Vaishnavi shetty",
+      "studTotalMarks": 275,
+      "studDob": "17/7/02",
       "studGender": "Female"
     },
     {
-      "studId": 102,
+      "id": 2,
       "studName": "Sravani patanage",
       "studTotalMarks": 375,
-      "studDob": "25/5/02",
+      "studDob": "27/7/02",
       "studGender": "Female"
     },
     {
-      "studId": 103,
-      "studName": "Vishnu prasad",
-      "studTotalMarks": 300,
-      "studDob": "27/7/02",
+      "id": 9,
+      "studName": "Hari",
+      "studTotalMarks": "300",
+      "studDob": "2000-11-11"
+    },
+    {
+      "id": 10,
+      "studName": "Madhavi Gogule",
+      "studTotalMarks": "250",
+      "studDob": "1990-11-22"
+    },
+    {
+      "id": 11,
+      "studName": "Hari prasad",
+      "studTotalMarks": "258",
+      "studDob": "2000-10-10",
       "studGender": "Male"
     }
   ]

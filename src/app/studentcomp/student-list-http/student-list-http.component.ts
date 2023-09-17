@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Stud } from 'src/app/stud/stud.model';
 import { StudentHttpService } from 'src/app/student/student-http.service';
+import { Studt } from 'src/app/studn';
 
 @Component({
   selector: 'app-student-list-http',
@@ -9,8 +11,9 @@ import { StudentHttpService } from 'src/app/student/student-http.service';
 })
 export class StudentListHttpComponent implements OnInit {
  
-  allStud:Stud[]=[];
-  constructor(private studentHttpService :StudentHttpService  ) { }
+  allStud:Studt[]=[];
+  constructor(private studentHttpService :StudentHttpService ,
+    private router:Router ) { }
   
   loadData()
   {
@@ -22,15 +25,15 @@ export class StudentListHttpComponent implements OnInit {
   ngOnInit(): void {
     this.loadData();
   }
+
+  addStudent(){
+    this.router.navigate(['studentadd']);
+  }
   viewStudent(studId:any){
-    this.studentHttpService.getAStudent(studId).subscribe({
-      next:(response)=>{
-     console.log(response)},
-      error:(err)=>{console.log(err);}
-     })
+    this.router.navigate(['studentview',studId]);
  
   }
-  deleteStudent(studId:number){
+  deleteStudent(studId:any){
     this.studentHttpService.deleteStudent(studId).subscribe({
      next:(response)=>{this.loadData();
     console.log(response)},
