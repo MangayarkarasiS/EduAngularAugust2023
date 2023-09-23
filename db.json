@@ -15,22 +15,31 @@
       "studGender": "Female"
     },
     {
-      "id": 9,
-      "studName": "Hari",
-      "studTotalMarks": "300",
-      "studDob": "2000-11-11"
-    },
-    {
-      "id": 10,
-      "studName": "Madhavi Gogule",
-      "studTotalMarks": "250",
-      "studDob": "1990-11-22"
-    },
-    {
       "id": 11,
       "studName": "Hari prasad",
-      "studTotalMarks": "258",
+      "studTotalMarks": "360",
       "studDob": "2000-10-10",
+      "studGender": "Male"
+    },
+    {
+      "id": 13,
+      "studName": "Madhavi Gogule",
+      "studTotalMarks": "300",
+      "studDob": "2008-11-11",
+      "studGender": "Female"
+    },
+    {
+      "id": 14,
+      "studName": "Sudha krishna",
+      "studTotalMarks": "475",
+      "studDob": "2002-11-11",
+      "studGender": "Female"
+    },
+    {
+      "id": 15,
+      "studName": "Mira Nandhini",
+      "studTotalMarks": "411",
+      "studDob": "2002-10-10",
       "studGender": "Male"
     }
   ]

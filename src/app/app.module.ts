@@ -8,7 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavigateComponent } from './navigate/navigate.component';
 import { FooterComponent } from './footer/footer.component';
 import { CounterComponent } from './counter/counter.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ColorComponent } from './color/color.component';
 import { ColorChildComponent } from './color/color-child/color-child.component';
 import { StudListComponent } from './stud/stud-list/stud-list.component';
@@ -24,6 +24,7 @@ import { StudentMarksComponent } from './student-marks/student-marks.component';
 import { StudentListHttpComponent } from './studentcomp/student-list-http/student-list-http.component';
 import { StudentViewHttpComponent } from './studentcomp/student-view-http/student-view-http.component';
 import { StudentAddHttpComponent } from './studentcomp/student-add-http/student-add-http.component';
+import { StudentEditHttpComponent } from './studentcomp/student-edit-http/student-edit-http.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +45,8 @@ import { StudentAddHttpComponent } from './studentcomp/student-add-http/student-
     StudentMarksComponent,
     StudentListHttpComponent,
     StudentViewHttpComponent,
-    StudentAddHttpComponent
+    StudentAddHttpComponent,
+    StudentEditHttpComponent
     
   ],
   imports: [
@@ -52,7 +54,8 @@ import { StudentAddHttpComponent } from './studentcomp/student-add-http/student-
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

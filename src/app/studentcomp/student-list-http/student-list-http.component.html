@@ -12,6 +12,7 @@
                 <th>Dob</th>
                 <th>Gender</th>
                 <th>Delete</th>
+                <th>Edit</th>
                 <th>View</th>
             </tr>
         </thead>
@@ -24,6 +25,8 @@
                 <td>{{stud.studGender}}</td>
               <td><button type="button" class="btn btn-danger" 
                 (click)="deleteStudent(stud.id)">Remove</button></td>
+                <td><button type="button" class="btn btn-primary" 
+                    (click)="editStudent(stud.id)">Edit</button></td>
                 <td><button type="button" class="btn btn-warning" 
                     (click)="viewStudent(stud.id)">View</button></td>
             </tr>

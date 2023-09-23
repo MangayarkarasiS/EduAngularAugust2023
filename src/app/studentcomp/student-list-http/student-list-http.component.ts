@@ -33,6 +33,9 @@ export class StudentListHttpComponent implements OnInit {
     this.router.navigate(['studentview',studId]);
  
   }
+  editStudent(studId:any){
+     this.router.navigate(['studentedit',studId]);    
+  }
   deleteStudent(studId:any){
     this.studentHttpService.deleteStudent(studId).subscribe({
      next:(response)=>{this.loadData();
