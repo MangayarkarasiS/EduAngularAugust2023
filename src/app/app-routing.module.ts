@@ -8,6 +8,8 @@ import { StudentViewHttpComponent } from './studentcomp/student-view-http/studen
 import { ObservableDemoComponent } from './observable-demo/observable-demo.component';
 import { StudentAddHttpComponent } from './studentcomp/student-add-http/student-add-http.component';
 import { StudentEditHttpComponent } from './studentcomp/student-edit-http/student-edit-http.component';
+import { LoginComponent } from './user/login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
   {path:'display',component:DisplayComponent},
@@ -18,6 +20,8 @@ const routes: Routes = [
   {path:'studentadd',component: StudentAddHttpComponent},
   {path:'operatorRxjs',component: ObservableDemoComponent},
   {path:'studentedit/:sid',component:StudentEditHttpComponent},
+  {path:'login',component:LoginComponent},
+  {path:'logout',component:LogoutComponent}
 ];
 
 @NgModule({

@@ -13,10 +13,15 @@
                            name="sName" 
                            ngModel
                            required
-                           #myStudName="ngModel">                          
+                           OnlyText
+                           #myStudName="ngModel">   
                            <div class="text-danger" 
-                                *ngIf="!myStudName.valid && myStudName.touched">
-                             Student name is required
+                           *ngIf="myStudName.errors?.['required'] && myStudName.touched">
+                        Student name is required
+                      </div>                       
+                           <div class="text-danger" 
+                                *ngIf="myStudName.errors?.['invalidText'] && myStudName.touched">
+                             Student name should be only charcters
                            </div>
                 </div>
                 <div class="form-group">

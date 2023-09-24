@@ -50,6 +50,7 @@ export class StudentEditHttpComponent implements OnInit {
     this.myReactiveForm.get('rsName')?.updateValueAndValidity();
   
    }
+   
    onlyText(control:FormControl){
      if(control.value!=null && !/^[A-Za-z\s]*$/.test(control.value))
      {
@@ -57,6 +58,7 @@ export class StudentEditHttpComponent implements OnInit {
      }
      return null;
    }
+
   editStudent(){
    console.log(this.myReactiveForm);
    let updatStudent:Studt={
@@ -70,6 +72,7 @@ export class StudentEditHttpComponent implements OnInit {
   this.studentHttpService.updateStudent(updatStudent).subscribe({
     next:(response)=>{this.router.navigate(['studentlist']),console.log(response)},
     error:(err)=>{console.log(err)}
+    
   })
   }
 }

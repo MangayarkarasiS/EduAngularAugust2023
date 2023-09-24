@@ -42,5 +42,22 @@
       "studDob": "2002-10-10",
       "studGender": "Male"
     }
+  ],
+  "users" :[
+    {
+      "uName":"admin",
+      "uPassword":"admin",
+      "token":"dummy-token"
+    },
+    {
+      "uName":"abc",
+      "uPassword":"123",
+      "token":"dummy-token"
+    },
+    {
+      "uName":"xyz",
+      "uPassword":"456",
+      "token":"dummy-token"
+    }
   ]
 }
