@@ -1,0 +1,12 @@
+
+Steps for adding files from local system to github:
+----------------------------------------------------
+git add .
+git commit -m "files added"
+git remote origin <repository address>
+git push
+
+Steps for adding files from github to local system:
+------------------------------------------------------
+git clone <repository> - do it for first time
+git pull <repository> - from second time only execute this code

@@ -5,7 +5,7 @@ import { User } from '../user/user.model';
   providedIn: 'root'
 })
 export class AuthService {
-  
+
   constructor() { }
 
   storeToken(user:User):void{

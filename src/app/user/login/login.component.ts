@@ -32,6 +32,8 @@ export class LoginComponent implements OnInit {
         this.filteredUser=this.allUsers.filter((eachUser)=> 
       (eachUser.uName==loginUser.uName && eachUser.uPassword==loginUser.uPassword));
       if(this.filteredUser.length==1){
+        //means login is success
+       
         this.authService.storeToken(this.filteredUser[0]);
         this.router.navigate(['studentlist'])
       }

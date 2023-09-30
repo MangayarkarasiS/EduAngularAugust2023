@@ -1,0 +1,23 @@
+install nginx server
+next we have to deploy our angular app in nginx server
+2.1 first we have to build our angular application
+    ng build
+   this command will create a folder called dist and the build app is available in thius folder
+ 2.2 next copy the contents of dist/angular-app1 into html folder of nginx
+ 2.3 now goto ngins conf folder and open nginc.conf file
+
+ server {
+        listen       6565;
+        server_name  localhost;
+
+              location / {
+            root   html;
+            index  index.html index.htm;
+        }
+
+       
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }   
+ }
